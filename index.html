@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080808">
+  <title>Ulan’s Birthday — 15.09.2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="loader" class="loader">
+    <div class="envelope" id="envelope">
+      <div class="envelope-glow"></div>
+      <div class="envelope-card">
+        <span class="mini-label">ТУҒАН КҮНГЕ ШАҚЫРУ</span>
+        <h2>Туған<br>күнім</h2>
+        <span class="gold-line"></span>
+        <p>15 • 09 • 2026</p>
+      </div>
+      <button id="openInvite" class="gold-btn">ШАҚЫРУДЫ АШУ</button>
+    </div>
+  </div>
+
+  <canvas id="particles"></canvas>
+  <div class="grain"></div>
+
+  <main id="site" class="site hidden">
+    <header class="hero">
+      <nav class="nav">
+        <span class="nav-mark">U / 26</span>
+        <button id="musicBtn" class="music-btn" aria-label="Музыканы қосу">♫ <span>МУЗЫКАНЫ ҚОСУ</span></button>
+      </nav>
+
+      <div class="hero-content reveal">
+        <div class="eyebrow">BIRTHDAY INVITATION</div>
+        <div class="birthday-decor" aria-hidden="true"><span>✦</span><span>🎈</span><span>✦</span></div><div class="gold-orb"></div>
+        <h1>MUKATAEV<br><span>ULAN DAULETULY</span></h1>
+        <p class="hero-title">ТУҒАН КҮНГЕ ШАҚЫРУ</p>
+        <p class="birthday-subtitle">БҮГІН — ҚУАНЫШ, КҮЛКІ ЖӘНЕ ЕСТЕ ҚАЛАРЛЫҚ СӘТТЕР КЕШІ ✨</p>
+        <div class="hero-date">
+          <span>15</span>
+          <i></i>
+          <span>ҚЫРКҮЙЕК</span>
+          <i></i>
+          <span>2026</span>
+        </div>
+        <p class="place">Өскемен қаласы <b>•</b> Шешек</p>
+        <a class="scroll-hint" href="#countdown">ТӨМЕНГЕ ЖЫЛЖЫТЫҢЫЗ <span>↓</span></a>
+      </div>
+    </header>
+
+    <section id="countdown" class="section countdown-section">
+      <div class="section-label">01 / THE MOMENT</div>
+      <div class="countdown-wrap reveal">
+        <p class="kicker">ТУҒАН КҮНГЕ ДЕЙІН</p>
+        <div id="countdownGrid" class="countdown">
+          <div><strong id="days">00</strong><span>КҮН</span></div>
+          <div><strong id="hours">00</strong><span>САҒАТ</span></div>
+          <div><strong id="minutes">00</strong><span>МИНУТ</span></div>
+          <div><strong id="seconds">00</strong><span>СЕКУНД</span></div>
+        </div>
+        <p id="todayMessage" class="today-message hidden">БҮГІН БІЗ БІРГЕМІЗ!</p>
+      </div>
+    </section>
+
+    <section class="section invitation">
+      <div class="section-label">02 / INVITATION</div>
+      <div class="invitation-card reveal">
+        <div class="quote-mark">“</div>
+        <h2>СІЗДІ<br><em>КҮТЕМІЗ!</em></h2>
+        <p>Сізді менің өмірге келген күнімді бірге қарсы алуға шын жүректен шақырамын.
+          Бұл ерекше күннің қуанышын сізбен бірге бөліскім келеді.</p>
+        <p>Кештің сәні де, көңілдің мәні де — сіздің қатысуыңызбен ерекше болмақ.<br>
+          Ақ тілегіңіз бен жылы лебізіңіз осы күнді одан сайын әдемі етеді.</p>
+        <span class="signature">— ULAN</span>
+      </div>
+    </section>
+
+    <section class="section details">
+      <div class="section-label">03 / DETAILS</div>
+      <div class="cards">
+        <article class="info-card reveal"><div class="icon">✦</div><span>ТУҒАН КҮН</span><strong>15 қыркүйек<br>2026</strong></article>
+        <article class="info-card reveal"><div class="icon">⌖</div><span>МЕКЕНЖАЙ</span><strong>Өскемен қаласы,<br>Шешек</strong></article>
+      </div>
+    </section>
+
+    <section class="section location">
+      <div class="section-label">04 / LOCATION</div>
+      <div class="location-inner reveal">
+        <p class="kicker">ҚАЙДА КЕЗДЕСЕМІЗ?</p>
+        <h2>Өскемен қаласы,<br><em>Шешек</em></h2>
+        <p class="muted">Кештің ең жақсы сәттерін бірге бөлісу үшін.</p>
+        <a class="gold-btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=%D3%A8%D1%81%D0%BA%D0%B5%D0%BC%D0%B5%D0%BD+%D2%9B%D0%B0%D0%BB%D0%B0%D1%81%D1%8B%2C+%D0%A8%D0%B5%D1%88%D0%B5%D0%BA">КАРТАДАН КӨРУ ↗</a>
+      </div>
+    </section>
+
+
+    <section class="section rsvp">
+      <div class="section-label">05 / RSVP</div>
+      <div class="rsvp-card reveal">
+        <p class="kicker">ҚАТЫСУЫҢЫЗДЫ РАСТАҢЫЗ</p>
+        <h2>Сізді кеште<br><em>көреміз бе?</em></h2>
+        <div class="rsvp-buttons">
+          <button class="rsvp-btn yes" data-message="Кездескенше! ❤️">✓ КЕЛЕМІН</button>
+          <button class="rsvp-btn no" data-message="Сізді түсінеміз. Келесі кездескенше!">✕ ӨКІНІШКЕ ОРАЙ, КЕЛЕ АЛМАЙМЫН</button>
+        </div>
+        <p id="rsvpMessage" class="rsvp-message"></p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-date">15.09.2026</div>
+      <h2>MUKATAEV ULAN<br>DAULETULY</h2>
+      <div class="gold-line"></div>
+      <p>КЕЗДЕСКЕНШЕ!</p>
+      <small>Made with love • 2026</small>
+    </footer>
+  </main>
+
+  <div id="lightbox" class="lightbox">
+    <button id="closeLightbox" aria-label="Жабу">×</button>
+    <img id="lightboxImg" src="" alt="Fullscreen memory">
+  </div>
+
+  <audio id="bgMusic" loop preload="none">
+    <source src="music.mp3" type="audio/mpeg">
+  </audio>
+  <script src="script.js"></script>
+</body>
+</html>
